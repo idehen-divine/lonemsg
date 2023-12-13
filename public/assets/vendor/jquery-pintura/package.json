@@ -1,0 +1,26 @@
+{
+    "version": "9.0.1",
+    "name": "@pqina/jquery-pintura",
+    "browser": "dist/useEditorWithJQuery.js",
+    "main": "dist/useEditorWithJQuery.js",
+    "module": "src/useEditorWithJQuery.js",
+    "description": "Pintura Image Editor adapter for use with jQuery",
+    "author": "Rik Schennink at PQINA",
+    "homepage": "https://pqina.nl/pintura/",
+    "license": "https://pqina.nl/pintura/license/",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && mv dist/useEditorWithJQuery.iife.js dist/useEditorWithJQuery-iife.js",
+        "preview": "vite preview"
+    },
+    "peerDependencies": {
+        "@pqina/pintura": "^8.x"
+    },
+    "devDependencies": {
+        "vite": "^4.3.5"
+    }
+}
