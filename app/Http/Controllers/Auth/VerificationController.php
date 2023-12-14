@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\VerifiesEmails;
+use App\Libs\Interfaces\MessageRepositoryInterface;
 
 class VerificationController extends Controller
 {
@@ -47,6 +48,6 @@ class VerificationController extends Controller
      */
     protected function guard()
     {
-        return auth()->guard('admin');
+        return auth()->guard('user');
     }
 }

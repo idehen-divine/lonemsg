@@ -16,13 +16,12 @@ use Illuminate\Support\Facades\Route;
 // Login routes
     Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::post('/login', 'Auth\LoginController@login');
-
-// User routes
-Route::prefix('auth')->group(function () {
     // Register routes
     Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
     Route::post('/register', 'Auth\RegisterController@register');
 
+// User routes
+Route::prefix('auth')->group(function () {
     // Password reset routes
     Route::get('/password/reset', 'Auth\ForgotssPasswordController@showLinkRequestForm')->name('password.request');
     Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');

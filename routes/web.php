@@ -17,10 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::namespace('App\Http\Controllers')->middleware(['auth:user'])->group(function () {
+Route::namespace('App\Http\Controllers')->middleware(['auth:user', 'verified'])->group(function () {
     Route::get('/messages', function () {
         return redirect()->route('message', auth()->guard('user')->user()->username);
     })->name('message');
+    Route::get('/emai', function () {
+        return view('welcome');
+    })->name('home');
     Route::get('/messages/refresh', 'MessageController@refresh')->name('refresh');
     Route::delete('/{id}/delete', 'MessageController@destroy')->name('message.clear');
 });

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Repository;
+namespace App\Libs\Repository;
 
 use App\Models\User;
 use App\Models\Message;
 use App\Models\MsgType;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use App\Interfaces\MessageRepositoryInterface;
+use App\Libs\Interfaces\MessageRepositoryInterface;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class MessageRepository implements MessageRepositoryInterface

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Interfaces\MessageRepositoryInterface;
 use Illuminate\Http\Request;
+use App\Libs\Interfaces\MessageRepositoryInterface;
 
 class MessageController extends Controller
 {
