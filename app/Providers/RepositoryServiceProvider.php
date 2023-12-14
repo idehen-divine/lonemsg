@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Providers;
-use App\Interfaces\MessageRepositoryInterface;
-use App\Repository\MessageRepository;
+use App\Libs\Interfaces\MessageRepositoryInterface;
+use App\Libs\Repository\MessageRepository;
 
 use Illuminate\Support\ServiceProvider;
 
