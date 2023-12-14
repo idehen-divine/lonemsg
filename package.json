@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "npx http-server"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "axios": "^1.6.1",
+    "bootstrap": "^5.2.3",
+    "http-server": "^14.1.1",
+    "laravel-vite-plugin": "^0.8.0",
+    "sass": "^1.56.1",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@pqina/jquery-pintura": "^9.x",
+    "@pqina/pintura": "^8.x",
+    "@pqina/pintura-input": "^9.x",
+    "bootstrap": "^5.0.0",
+    "boxicons": "^2.1.4",
+    "datatables.net-bs5": "^1.13.8",
+    "feather-icons": "^4.29.1",
+    "jquery": "^3.6.0"
+  }
+}
