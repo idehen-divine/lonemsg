@@ -1,0 +1,25 @@
+<?php
+namespace App\Libs\Actions;
+
+
+//use App\Models\{name};
+use Illuminate\Http\JsonResponse;
+use App\Http\Resources\{name}Resource;
+
+class {name}Action
+{
+    /**
+     * @var {name}
+     */
+    //private {name} $model;
+
+    /**
+     * 
+     * @param {name} $model
+     */
+    //public function __construct({name} $model)
+    //{
+    //    $this->model = $model;
+    //}
+
+}

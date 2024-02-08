@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Libs\RepositoryInterfaces;
+
+
+use App\Http\Requests\{name}StoreRequest;
+use App\Http\Requests\{name}UpdateRequest;
+
+interface {name}RepositoryInterface
+{
+	public function index();
+    
+    public function create();
+    
+    public function store({name}StoreRequest $request);
+    
+    public function show(string $id);
+    
+    public function edit(string $id);
+    
+    public function update({name}UpdateRequest $request, string $id);
+    
+    public function destroy(string $id);
+}

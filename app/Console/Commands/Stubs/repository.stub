@@ -1,0 +1,60 @@
+<?php
+
+namespace App\Libs\Repositories;
+
+use App\Libs\Actions\{name}Action;
+use App\Http\Requests\{name}StoreRequest;
+use App\Http\Requests\{name}UpdateRequest;
+//use App\Http\Resources\{name}Resource;
+use App\Libs\RepositoryInterfaces\{name}RepositoryInterface;
+
+class {name}Repository implements {name}RepositoryInterface
+{
+    /**
+     * @var {name}Action
+     */
+    private {name}Action $action;
+
+    /**
+     * @param {name}Action $action
+     */
+    public function __construct({name}Action $action)
+    {
+        $this->action = $action;
+    }
+
+    public function index()
+    {
+        //
+    }
+
+    public function create()
+    {
+        //
+    }
+
+    public function store({name}StoreRequest $request)
+    {
+        //
+    }
+
+    public function show(string $id)
+    {
+        //
+    }
+
+    public function edit(string $id)
+    {
+        //
+    }
+
+    public function update({name}UpdateRequest $request, string $id)
+    {
+        //
+    }
+
+    public function destroy(string $id)
+    {
+        //
+    }
+}
